@@ -7,7 +7,7 @@ import SplashScreen from 'react-native-smart-splash-screen'
 const STATUS_BAR_HEIGHT = StatusBar.currentHeight;
 export default class App extends React.Component {
   componentDidMount() {
-    BackHandler.addEventListener('hardwareBackPress', this.handleBackButton);
+  /*  BackHandler.addEventListener('hardwareBackPress', this.handleBackButton);
    
     
   }
@@ -18,6 +18,7 @@ export default class App extends React.Component {
   
   handleBackButton() {
     return true;
+    */
   }
   render() {
     return (
