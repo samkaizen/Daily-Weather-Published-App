@@ -7,7 +7,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import { TabNavigator , StackNavigator, TabBarBottom } from 'react-navigation' ;  
 
-const Navigator = TabNavigator({
+const MainNav = TabNavigator({
     home : {screen : Search},
     about :  { screen : About },
  
@@ -60,7 +60,7 @@ const Navigator = TabNavigator({
  }
  
  );
-/* const Navigator2 = StackNavigator({
+ const Navigator = StackNavigator({
      welcome : {screen :Splash },
      main : {
          screen :MainNav,
@@ -78,6 +78,6 @@ const Navigator = TabNavigator({
 
 
  }
- ) */
+ ) 
 
  export default Navigator;

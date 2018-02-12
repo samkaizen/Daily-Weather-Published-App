@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text} from 'react-native';
-import {Card} from 'react-native-elements';
+import { View, Text } from 'react-native';
+import { Card } from 'react-native-elements';
 
 class About extends React.Component {
   render() {
@@ -16,7 +16,7 @@ class About extends React.Component {
         
 
           
-          <Text style={[styles.textStyles, {paddingTop : 10}]}>You can Search By a Single City or Activate The Geolocation So that the City Will Be Automatically Defined For You, But Before That Please Ensure That You Activate You Device Gps.
+          <Text style={[styles.textStyles, {paddingTop : 10}]}>You can Search By a Single City or Activate The Geolocation So That the City Will Be Automatically Defined For You, But Before That Please Make Sure That You Activate Your Device Gps.
               </Text>
               </View>
 

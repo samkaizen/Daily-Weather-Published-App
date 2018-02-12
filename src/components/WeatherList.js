@@ -44,6 +44,7 @@ class WeatherList extends React.Component {
  }
 
   setLocation  = () =>{
+     alert('Please Make Sure The Device Gps Is Activated');
      this.setState({geolocation: true, error : null, country : null});
     if (Platform.OS === 'android' && !Constants.isDevice) {
       this.setState({
@@ -64,7 +65,6 @@ class WeatherList extends React.Component {
 
     let location = await Location.getCurrentPositionAsync({});
     this.setState({ location,city : null,country : null });  
-   // console.log('location', location)  
   }
 
    async fetchData(){
@@ -96,7 +96,6 @@ class WeatherList extends React.Component {
  }
 
   searchWeather = () =>{
-    //console.log('Search is in Progress...');
     if( this.state.city===null && this.state.geolocation===false){
       alert ('Please Enter a Valid city First');
       
@@ -112,12 +111,6 @@ class WeatherList extends React.Component {
 
   render() {
 
-     if (this.state.error && this.state.loading){
-        
-      
-
-     }
-   // console.log(this.state) ;
     return (
       <ScrollView style={styles.wrapperStyles} >
        
@@ -167,7 +160,7 @@ class WeatherList extends React.Component {
 
              />
               <Text style={styles.errorTextStyle} >
-            {this.state.error ? this.state.error + 'Please Make Sure That Spelling of The city is Correct!': null}
+            {this.state.error ? 'Please Make Sure That The Spelling of The city is Correct If You have Already Chosen One !': null}
                </Text>
          </Card>
         <Card >
