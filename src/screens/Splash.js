@@ -14,11 +14,10 @@ class Splash extends Component {
     };
     componentDidMount(){
 
-        setTimeout(()=>{
             this.props.navigation.navigate('main');
             this.setState({visible : false})
 
-        },3000);
+    
 
     }
 

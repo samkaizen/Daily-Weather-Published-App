@@ -44,7 +44,7 @@ class WeatherList extends React.Component {
  }
 
   setLocation  = () =>{
-     this.setState({geolocation: true, error : null});
+     this.setState({geolocation: true, error : null, country : null});
     if (Platform.OS === 'android' && !Constants.isDevice) {
       this.setState({
         errorMessage: 'Oops, this will not work on Sketch in an Android emulator. Try it on your device!',
@@ -147,7 +147,7 @@ class WeatherList extends React.Component {
             onChangeText={(city) => this.setCity(city)}
             style={styles.inputStyles}
             editable={this.state.geolocation ? false : true}
-            placeholder={this.state.geolocation ? 'The City Has Been Automatically Defined' : 'Enter Your City!'}
+            placeholder='Enter Your City!'
           />:<View style = {{ flex : 1, justifyContent : 'center', alignItems : 'center', margin :20}}>
           <Text style={{fontSize :16 }}> 
                The city has been automatically </Text>
@@ -158,11 +158,13 @@ class WeatherList extends React.Component {
 
           </View>}
             <Button
+               
                raised
                title = { this.state.loading ? 'Loading Data in Progress...'  : 'Search'}
                onPress = {this.searchWeather}
-               buttonStyle={{backgroundColor: 'skyblue', borderRadius: 10,}}
-               textStyle={{textAlign: 'center', fontSize : 18, color :'black'}}
+               buttonStyle={{backgroundColor: 'deepskyblue', borderRadius: 10}}
+               textStyle={{textAlign: 'center', fontSize : 18, color :'#fff'}}
+
              />
               <Text style={styles.errorTextStyle} >
             {this.state.error ? this.state.error + 'Please Make Sure That Spelling of The city is Correct!': null}
