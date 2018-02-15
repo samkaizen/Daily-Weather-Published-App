@@ -9,7 +9,7 @@ class About extends React.Component {
          <Card>
           <View style={styles.containerStyles} >
 
-          <Text style={[styles.textStyles, {color : 'red', alignSelf : 'center', fontSize : 20}]} > Welcome To the Free Weather Forecast  Finder! </Text>
+          <Text style={[styles.textStyles, {color : 'red', alignSelf : 'center', fontSize : 20}]} > Daily Weather is a Free Weather Forecast Finder! </Text>
   
           <Text style={[styles.textStyles, {marginTop : 10}]}> With This Simple Yet Powerful App You will Get The most accurate weather Forecast Data For 10 Days!.
           </Text>

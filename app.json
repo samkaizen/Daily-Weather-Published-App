@@ -1,5 +1,24 @@
 {
   "expo": {
-    "sdkVersion": "25.0.0"
+    "name" : "Daily-Weather",
+     "description" : "Free Weather Forecast Finder",
+     "slug"         : "daily-weather",
+     "privacy" : "public",
+    "sdkVersion": "25.0.0",
+    "orientation" : "portrait",
+    "version" : "1.0.0",
+    "icon" : "./src/components/icons/app-icon.png",
+    "loading" : {
+      "icon" : "./src/components/icons/logo.png",
+      "hideExponentText" : true
+    },
+    "android" : {
+      "package" :"com.kaizen.dailyWeather",
+      "versionCode" : 1 ,
+      "permissions" : [],
+      "icon" : "./src/components/icons/app-icon.png"
+
+    }
+
   }
 }

@@ -44,7 +44,6 @@ class WeatherList extends React.Component {
  }
 
   setLocation  = () =>{
-     alert('Please Make Sure The Device Gps Is Activated');
      this.setState({geolocation: true, error : null, country : null});
     if (Platform.OS === 'android' && !Constants.isDevice) {
       this.setState({
@@ -127,7 +126,7 @@ class WeatherList extends React.Component {
                 large
                 backgroundColor='green'
                 title='Turn Geolocation Off!'
-                onPress={() => this.setState({ geolocation: false ,city:null,country :null})}
+                onPress={() => this.setState({ geolocation: false ,city:null,country :null, error : false})}
                 icon={{ name: 'location-on' }}
 
 
